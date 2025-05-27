@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 
 export const Header = ({ cartItemCount }) => {
   return (
-    <header className="bg-white shadow-sm py-4 px-6 sticky top-0 z-10">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold text-indigo-600">
-          ShopEase
+    <header className=" shadow-sm py-4 px-6 sticky top-0 z-10 bg-blue-800">
+      <div className="container mx-auto flex items-center justify-between bg-blue-400 p-4 rounded-lg  shadow-md">
+        <Link href="/" className="text-xl  font-bold text-indigo-1000">
+          Logo
         </Link>
         
         <div className="relative w-1/3">
