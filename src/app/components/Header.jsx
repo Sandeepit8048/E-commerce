@@ -1,8 +1,5 @@
 import { Search, ShoppingCart, User } from 'lucide-react';
 import Link from 'next/link';
-// import { Header } from '@/components/Header';
-// import { Header } from '../components/Header'; // adjust path as needed
-
 import PropTypes from 'prop-types';
 
 export const Header = ({ cartItemCount }) => {

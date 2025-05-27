@@ -36,12 +36,13 @@ export const ProductCard = ({ product }) => {
           <span className="text-sm text-gray-500 ml-1">({product.rating.count})</span>
         </div>
         <div className="flex justify-between items-center">
-          <span className="font-bold text-indigo-600">${product.price}</span>
+          <span className="font-bold text-black-600">${product.price}</span>
           <button
             onClick={() => addToCart(product)}
-            className="bg-indigo-600 text-white p-2 rounded-full hover:bg-indigo-700 transition-colors"
+            className="bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-700 transition-colors"
           >
-            <ShoppingCart className="w-4 h-4" />
+            Add to Cart
+            {/* <ShoppingCart className="w-4 h-4" /> */}
           </button>
         </div>
       </div>
