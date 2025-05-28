@@ -1,4 +1,4 @@
-'use client'; // ✅ Add this at the very top
+'use client'; 
 
 import { Star, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
@@ -41,8 +41,7 @@ export const ProductCard = ({ product }) => {
             onClick={() => addToCart(product)}
             className="bg-indigo-600 text-white p-2 rounded-md hover:bg-indigo-700 transition-colors"
           >
-            Add to Cart
-            {/* <ShoppingCart className="w-4 h-4" /> */}
+            Add to Cart  
           </button>
         </div>
       </div>

@@ -1,9 +1,9 @@
 'use client';
-
-import { Header } from './components/Header';
+import { Header } from '../components/Header';
 import { Trash2, ShoppingCart } from 'lucide-react';
 import Link from 'next/link';
-import { useCartStore } from '@/store/cartStore';
+import { useCartStore } from '../storage/cartStore';
+
 
 export default function CartPage() {
   const { cart, removeFromCart, updateQuantity, clearCart } = useCartStore();
@@ -123,7 +123,7 @@ export default function CartPage() {
       
       <footer className="bg-gray-100 py-6">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© 2023 ShopEase. All rights reserved.</p>
+          <p>© 2025 SandeepSoap. All rights reserved.</p>
         </div>
       </footer>
     </div>

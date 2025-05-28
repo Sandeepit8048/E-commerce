@@ -1,7 +1,7 @@
 import { Header } from '../components/Header';
 import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
-import { useCartStore } from '@/store/cartStore';
+import { useCartStore } from './storage/cartStore';
 import { ProductImage } from './ProductImage';
 import { ProductInfo } from './ProductInfo';
 import { AddToCart } from './AddToCart';
@@ -40,7 +40,7 @@ export default async function ProductDetail({ params }) {
       
       <footer className="bg-gray-100 py-6">
         <div className="container mx-auto px-4 text-center text-gray-600">
-          <p>© 2023 ShopEase. All rights reserved.</p>
+          <p>© 2025 SandeepSoap. All rights reserved.</p>
         </div>
       </footer>
     </div>
