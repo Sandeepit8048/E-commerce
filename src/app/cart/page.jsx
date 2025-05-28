@@ -17,19 +17,22 @@ export default function CartPage() {
       <main className="flex-grow container mx-auto px-4 py-8">
         <h1 className="text-2xl font-bold mb-6">Your Shopping Cart</h1>
         
-        {cart.length === 0 ? (
-          <div className="text-center py-12">
-            <ShoppingCart className="mx-auto w-12 h-12 text-gray-400 mb-4" />
-            <h2 className="text-xl font-semibold mb-2">Your cart is empty</h2>
-            <p className="text-gray-600 mb-4">Looks like you haven't added anything to your cart yet</p>
-            <Link
-              href="/"
-              className="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
-            >
-              Continue Shopping
-            </Link>
-          </div>
-        ) : (
+       {cart.length === 0 ? (
+  <div className="text-center py-12">
+    <ShoppingCart className="mx-auto w-12 h-12 text-gray-400 mb-4" />
+    <h2 className="text-xl font-semibold mb-2">Your cart is empty</h2>
+    <p className="text-gray-600 mb-4">
+      Looks like you haven&apos;t added anything to your cart yet
+    </p>
+    <Link
+      href="/"
+      className="inline-block bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition-colors"
+    >
+      Continue Shopping
+    </Link>
+  </div>
+) 
+ : (
           <div className="flex flex-col lg:flex-row gap-8">
             <div className="flex-grow">
               <div className="bg-white rounded-lg shadow-sm overflow-hidden">
@@ -37,7 +40,7 @@ export default function CartPage() {
                   {cart.map((item) => (
                     <div key={item.id} className="p-4 flex flex-col sm:flex-row gap-4">
                       <div className="w-full sm:w-24 h-24 bg-gray-200 rounded-lg overflow-hidden">
-                        <img
+                        <image
                           src={item.image}
                           alt={item.title}
                           className="w-full h-full object-cover"

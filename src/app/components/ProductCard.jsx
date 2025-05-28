@@ -1,6 +1,6 @@
 'use client'; 
-
-import { Star, ShoppingCart } from 'lucide-react';
+import Image from 'next/image';
+import { Star } from 'lucide-react';
 import Link from 'next/link';
 import { useCartStore } from '../storage/cartStore';
 
@@ -10,13 +10,17 @@ export const ProductCard = ({ product }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <Link href={`/product/${product.id}`}>
-        <div className="h-48 bg-gray-200 overflow-hidden">
-          <img
-            src={product.image}
-            alt={product.title}
-            className="w-full h-full object-cover"
-          />
-        </div>
+          <div className="bg-white p-4 rounded-lg shadow-sm">
+      <Image
+        src={product.image}
+        alt={product.title}
+        width={300}
+        height={300}
+        className="object-contain w-full h-64"
+      />
+      <h3 className="text-lg font-semibold mt-2">{product.title}</h3>
+      <p className="text-gray-600">${product.price}</p>
+    </div>
       </Link>
       <div className="p-4">
         <Link href={`/product/${product.id}`}>

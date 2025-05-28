@@ -1,6 +1,7 @@
-import { Header } from '@/components/Header';
-import { ProductCard } from '@/components/ProductCard';
-import { useCartStore } from '@/store/cartStore';
+
+import { Header } from '../../components/Header';
+import { ProductCard } from '../../components/ProductCard';
+import { useCartStore } from '../cartStore';
 
 const getProducts = async () => {
   const res = await fetch('https://fakestoreapi.com/products');

@@ -1,8 +1,8 @@
-import { Search, ShoppingCart, User } from 'lucide-react';
+import { Search, ShoppingCart, } from 'lucide-react';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-export const Header = ({ cartItemCount }) => {
+export const Header = ({  }) => {
   return (
     <header className=" shadow-sm py-4 px-6 sticky top-0 z-10 bg-blue-700">
       <div className="container mx-auto flex items-center justify-between  p-4 rounded-lg ">
